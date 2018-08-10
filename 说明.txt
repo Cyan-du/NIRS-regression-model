@@ -1,0 +1,12 @@
+tensorflow下的自动编码机降维，以及rbf网络，tf_run是主文件
+totaldata是整体文件，是把test8和valid8合并起来的，没有重复数据，共12103条数据
+
+1.new_tfrun.py
+
+是主程序，自动编码机和grnn结合，完成了预测
+先用自动编码机降至30维，再用grnn做回归预测，用到了neupy库
+
+2.pca_grnn.py
+核心程序sklearn里面的pca和grnn相结合，完成预测
+
+
